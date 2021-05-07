@@ -5,13 +5,16 @@ from gtts import gTTS
 
 f = open('ruswords.csv', newline='', encoding="utf-8")
 reader = csv.reader(f)
+#Skipping rows on csv file - https://stackoverflow.com/a/40404006/13954598
+for skip in range(948):
+    next(reader)
 
 def script(reader):
     for row in reader:
         word = row[0].split("(")[0].split("/у-")[0].split("/о-")[0].split("/по-")[0].split("/за-")[0].split("/с-")[0]
         wordForFile = word.split("/")[0]  # because files can't have slashes
         eng_text = row[1]
-        if path.isfile("ru/" + wordForFile + ".mp3"):  # to not run over the same word twice
+        if path.isfile("ru" + wordForFile + ".mp3"):  # to not run over the same word twice
             pass
         else:
             save_word(word, wordForFile)

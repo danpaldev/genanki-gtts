@@ -6,7 +6,7 @@ from gtts import gTTS
 f = open('ruswords.csv', newline='', encoding="utf-8")
 reader = csv.reader(f)
 #Skipping rows on csv file - https://stackoverflow.com/a/40404006/13954598
-for skip in range(948):
+for skip in range(8689): #Just send it ;) Number updated
     next(reader)
 
 def script(reader):

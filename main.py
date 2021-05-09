@@ -35,7 +35,7 @@ def savetext_eng(eng_text, wordForFile):
     print(wordForFile + "_eng")
     tts = gTTS(eng_text)
     # Speech.save(Speech(word, "RU"), + wordForFile + ".mp3")
-    tts.save( "eng/" + wordForFile + ".mp3")
+    tts.save( "eng/" + wordForFile + "_eng.mp3")
 
 script(reader)
 

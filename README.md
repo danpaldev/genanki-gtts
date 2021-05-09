@@ -18,7 +18,7 @@ Don't forget to do it on an isolated python 3 virutal environment:
 
 ------
 
-##anki_stuff.py
+# anki_stuff.py
 
 This file is used for generating the anki deck.
 
@@ -31,7 +31,7 @@ So, the best way to do it manually is to just generate your decks as it they con
 of your anki installation.
 
 ---------------------
-##main.py
+# main.py
 
 This file basically helps to generate TTS files on mp3 of russian and english words
 contained inside a CSV.

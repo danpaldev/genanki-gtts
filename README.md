@@ -1,4 +1,6 @@
-About genanki
+anki_stuff.py
+
+This file is used for generating the anki deck.
 
 genanki is amazing, but its documentation is mostly crap. Because of this, I could never find
 how to add the mediafiles in a dynamic or efficient way using genanki api.
@@ -9,8 +11,6 @@ So, the best way to do it manually is to just generate your decks as it they con
 of your anki installation.
 
 ---------------------
-
-
 main.py
 
 This file basically helps to generate TTS files on mp3 of russian and english words

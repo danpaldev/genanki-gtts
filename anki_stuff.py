@@ -5,6 +5,17 @@ from os import path
 from retrying import retry
 from gtts import gTTS
 
+my_css = """
+.card{
+font-family: consolas;
+font-size: 35px;
+text-align: center;
+color: black;
+background-color: white;
+}
+"""
+
+
 my_model = genanki.Model(
     random.randrange(1 << 30, 1 << 31),
     'Double Audio Model',
@@ -22,7 +33,9 @@ my_model = genanki.Model(
             'qfmt': '{{English}}<br>{{English_Audio}}',
             'afmt': '{{FrontSide}}<hr id="answer">{{Russian}}<br>{{Russian_Audio}}<br><br>Frequency Index: {{Index}}<br><br>{{Example}}'
         }
-    ])
+    ],
+    css=my_css
+)
 
 my_deck = genanki.Deck(
     random.randrange(1 << 30, 1 << 31),
